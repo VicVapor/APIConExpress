@@ -45,7 +45,6 @@ router.put("/:id", async (req, res) => {
       minimun_Age,
     },
   });
-<<<<<<< HEAD
   res.send("Movie updated.");
 });
 
@@ -53,16 +52,6 @@ router.delete("/:id", async (req, res) => {
   const { id } = req.params;
   await movie.findByIdAndDelete(id);
   res.send("Movie deleted.");
-=======
-  /*res.send({
-    status: "Movie successfully updated.",
-  });*/
-  res.json(updatedMovie);
-});
-
-router.put('/', async (req, res)=>{
-
->>>>>>> 1967a09c27e190f1846b5844e02468df192509c0
 });
 
 module.exports = router;
